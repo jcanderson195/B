@@ -56,45 +56,76 @@ namespace DaveProblemsDay2
 
         public void BackwardsTriangle()
         {
+            triangleBoard.Add(inside);
 
+
+            int listSize = 4;
+
+            for (int index = 4; index < listSize; index--)
+            {
+                triangleBoard.Add(new List<string>());
+
+
+
+
+                for (int innerIndex = 0; innerIndex < 1; innerIndex--)
+                {
+
+                    triangleBoard[innerIndex].Add("*");
+
+                    foreach (List<string> innerList in triangleBoard)
+                    {
+
+                        Console.WriteLine();
+                        foreach (string square in innerList)
+                        {
+
+                            Console.Write(square);
+
+
+                        }
+                    }
+                }
+
+            }
         }
 
 
-        //public void UpsideDownTriangle()
-        //{
-        //    triangleBoard.Add(inside);
+        public void UpsideDownTriangle()
+        {
+            triangleBoard.Add(inside);
 
 
-        //    int listSize = 4;
+            int listSize = 4;
 
-        //    for (int index = 0; index < listSize; index++)
-        //    {
-        //        triangleBoard.Add(new List<string>());
-
-
+            for (int index = 0; index < listSize; index++)
+            {
+                triangleBoard.Add(new List<string>());
 
 
-        //        for (int innerIndex = 0; innerIndex < 1; innerIndex++)
-        //        {
-
-        //            triangleBoard[innerIndex].Add("*");
-
-        //            foreach (List<string> innerList in triangleBoard)
-        //            {
-
-        //                Console.WriteLine();
-        //                foreach (string square in innerList)
-        //                {
-
-        //                    Console.Write(square);
 
 
-        //                }
-        //            }
-        //        }
+                for (int innerIndex = 0; innerIndex < 1; innerIndex++)
+                {
 
-        //    }
-        //}
+                    triangleBoard[innerIndex].Add("*");
+
+                    foreach (List<string> innerList in triangleBoard)
+                    {
+
+                        Console.WriteLine();
+                        foreach (string square in innerList)
+                        {
+
+                            Console.Write(square);
+
+
+                        }
+                    }
+                }
+
+            }
+        }
 
 
     }

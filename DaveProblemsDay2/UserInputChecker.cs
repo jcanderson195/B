@@ -9,12 +9,12 @@ namespace DaveProblemsDay2
     class UserInputChecker
     {
 
-        List<string> enteredWords = new List<string>();
+       public List<string> enteredWords = new List<string>();
         string word;
 
         public UserInputChecker()
         {
-
+            enteredWords.Add(" ");
         }
 
         public void getUserInput()
@@ -25,22 +25,23 @@ namespace DaveProblemsDay2
                 Console.WriteLine("Please enter a word: ");
                 word = Console.ReadLine();
 
-                if (enteredWords.Contains(word))
-                {
-                    Console.WriteLine("Bark! You entered that word already!");
-                    break;
-                }
-                else
-                {
 
-                    Console.WriteLine("Thank you for your word");
-                    enteredWords.Add(word);
+                for (int newWord = 0; newWord < enteredWords.Count; newWord++)
+                {
+                    if (enteredWords[newWord] == word)
+                    {
+                        Console.WriteLine("Bark! You entered that word already!");
+                        Environment.Exit(0);
+                    }
 
                 }
-
+                    
+                        Console.WriteLine("Thank you for your word");
+                        
+                enteredWords.Add(word);
+                
 
             }
-
 
         }
     }
