@@ -11,17 +11,20 @@ namespace DaveProblemsDay2
         static void Main(string[] args)
         {
 
-           // UserInputChecker inputChecker = new UserInputChecker();
+            // UserInputChecker inputChecker = new UserInputChecker();
             //inputChecker.getUserInput();
-
-
 
             triangleProblem triangle = new triangleProblem();
             triangle.triangle();
 
-            triangleProblem backwardsTriangle = new triangleProblem();
-            backwardsTriangle.BackwardsTriangle();
 
+            triangleProblem backwards = new triangleProblem();
+            backwards.BackwardsTriangle();
+            
+            triangleProblem upsideDownTriangle = new triangleProblem();
+            upsideDownTriangle.UpsideDownTriangle();
+
+            
 
         }
     }
