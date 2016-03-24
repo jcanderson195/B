@@ -11,8 +11,7 @@ namespace DaveProblemsDay2
         static void Main(string[] args)
         {
 
-            // UserInputChecker inputChecker = new UserInputChecker();
-            //inputChecker.getUserInput();
+            
 
             triangleProblem triangle = new triangleProblem();
             triangle.triangle();
@@ -20,9 +19,15 @@ namespace DaveProblemsDay2
 
             triangleProblem backwards = new triangleProblem();
             backwards.BackwardsTriangle();
-            
+
             triangleProblem upsideDownTriangle = new triangleProblem();
             upsideDownTriangle.UpsideDownTriangle();
+
+            UserInputChecker inputChecker = new UserInputChecker();
+            inputChecker.getUserInput();
+
+            FibbonacciNumbers newSequence = new FibbonacciNumbers();
+            newSequence.NumberSequence(1);  /*Not completed*/
 
             
 

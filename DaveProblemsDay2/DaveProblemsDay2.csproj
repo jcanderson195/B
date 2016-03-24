@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FibbonacciNumbers.cs" />
     <Compile Include="UserInputChecker.cs" />
     <Compile Include="triangleProblem.cs" />
     <Compile Include="Program.cs" />
